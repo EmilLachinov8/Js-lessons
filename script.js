@@ -29,7 +29,7 @@ Promise.all([getDate, getName])
 	.then(json => {
 		console.log(json);
 
-		let img = document.createElement('img');
+		const img = document.createElement('img');
 		img.src = json.avatar_url;
 		img.alt = 'Avatar';
 		document.body.append(img);
